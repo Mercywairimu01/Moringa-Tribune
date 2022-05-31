@@ -22,7 +22,7 @@ def news_of_day(request):
             recipient.save()
             send_welcome_email(name,email)
 
-            HttpResponseRedirect('news_today')
+            HttpResponseRedirect('today-news')
            
         else:
             form =NewsLetterForm()    
