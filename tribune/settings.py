@@ -16,7 +16,7 @@ from decouple import config,Csv
 
 import django_heroku
 
-MODE=config("MODE", default="dev")
+MODE=config("MODE", default="prod")
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
