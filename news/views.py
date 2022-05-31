@@ -24,8 +24,8 @@ def news_of_day(request):
 
             HttpResponseRedirect('today-news')
            
-        else:
-            form =NewsLetterForm()    
+    else:
+        form =NewsLetterForm()    
     return render(request,'all-news/today-news.html',{"date":date ,"news": news,"letterForm":form}) 
     
 def convert_dates(dates):
