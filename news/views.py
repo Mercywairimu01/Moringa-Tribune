@@ -26,7 +26,7 @@ def news_of_day(request):
            
         else:
             form =NewsLetterForm()    
-        return render(request,'all-news/today-news.html',{"date":date ,"news": news,"letterForm":form}) 
+    return render(request,'all-news/today-news.html',{"date":date ,"news": news,"letterForm":form}) 
     
 def convert_dates(dates):
      # Function that gets the weekday number for the date.
